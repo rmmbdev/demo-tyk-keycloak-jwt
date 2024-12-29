@@ -29,6 +29,7 @@ docker cp /usr/bin/busybox demo-tyk-keyclock-keycloak-1:/busybox
 ``` 
 
 ### To import realm configs do this
+One of the most important parts of integrating these two is configuring keycloak for providing suitable jwt. But we can use the exported keycloak realm which is configured earlier.
 
 copy config to docker
 ``` bash
