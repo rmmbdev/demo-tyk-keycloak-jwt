@@ -33,7 +33,7 @@ One of the most important parts of integrating these two is configuring keycloak
 
 copy config to docker
 ``` bash
-docker cp ./my-realm.json demo-tyk-keycloak-keycloak-q:/opt/keycloak/data
+docker cp ./my-realm.json demo-tyk-keycloak-keycloak-1:/opt/keycloak/data
 ```
 
 restore 
