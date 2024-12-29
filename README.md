@@ -60,6 +60,13 @@ curl --request POST \
 
 ```
 
+### reload tyk
+``` bash
+curl --request GET \
+  --url http://localhost:8090/tyk/reload/group \
+  --header 'X-Tyk-Authorization: foo'
+```
+
 ### test the pipeline
 
 get token
