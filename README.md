@@ -28,11 +28,6 @@ copy `busybox` to realted docker (this is because of distroless images)
 docker cp /usr/bin/busybox demo-tyk-keyclock-keycloak-1:/busybox 
 ``` 
 
-attach bash to container
-``` bash
-docker exec -it demo-tyk-keyclock-keycloak-1 /busybox sh
-```
-
 ### To import realm configs do this
 
 copy config to docker
@@ -85,4 +80,11 @@ test api
 curl --request GET \
   --url http://localhost:8090/api/items/1 \
   --header 'Authorization: Bearer <accecc-token>'
+```
+
+
+### Debug
+attach bash to container for test purposes
+``` bash
+docker exec -it demo-tyk-keyclock-keycloak-1 /busybox sh
 ```
